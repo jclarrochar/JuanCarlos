@@ -1,0 +1,260 @@
+/*Estilos exclusivamente desarrollados por Juan Carlos Larrocha*/
+
+/* ==========================
+   Estilos generales
+   ========================== */
+
+/*BODY*/   
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*NAV*/
+
+#div1 {
+    background-color: rgb(68, 23, 23);
+    padding: 10px 20px;
+    top:0;
+    display: flex;
+    align-items: center;
+}
+
+#div1 > a img {
+    width: 15%;
+    
+}
+
+#div1 > a img:hover {
+    width: 20%;
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#menu li {
+    position: relative;
+}
+
+#menu li > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+#menu > li:hover > a {
+    background-color: rgb(101, 101, 101);
+}
+
+#menu li ul {
+    display: none; /*oculto*/
+    position: absolute;
+    background-color: rgb(64, 64, 64);
+    list-style: none;
+    padding: 0;
+}
+
+#menu li ul li a {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+#menu li ul li a:hover {
+    background-color: white;
+    color: rgb(64, 64, 64);
+}
+
+#menu > li:hover ul {
+    display: block; /*visible*/
+}
+
+/*FOOTER*/
+
+#footer {
+    background-color: rgb(68, 23, 23);  
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px; 
+    position: absolute; 
+    bottom: 0;
+    width: 100%;    
+    
+}
+
+#footer p {
+    margin: 0;
+}
+
+/* ==========================
+   Estilos de la página Index
+   ========================== */
+
+.index #video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;  
+    object-fit: cover;  
+    z-index: -1;  
+}
+
+.index .titulo-superpuesto {
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+    justify-content: center;
+    color: white;
+    font-size: 64px;  
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;  
+}
+
+.index h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* ==========================
+   Estilos de la página Programación
+   ========================== */
+
+* .programacion {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("../img/FormularioAbonados.jpeg")  center/cover;
+    height: 100vh;
+}
+
+.programacion #galeria {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.programacion .evento {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: black; 
+}
+
+.programacion .evento img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.programacion .evento h3 {
+    margin: 10px 0 5px;
+}
+
+.programacion .evento p {
+    margin: 0 10px 10px;
+    font-size: 15px;
+}
+
+
+.programacion #tabla-programacion {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.programacion #tabla-programacion th, #tabla-programacion td {
+    border: 1px solid #ddd;
+    padding: 10px; 
+    text-align: left;
+    color: black; 
+}
+
+.programacion #tabla-programacion th {
+    background-color: rgb(68,23,23);
+    color: white;
+}
+
+.programacion #tabla-programacion tr:nth-child(even) {
+    background-color: rgba(245, 245, 245, 0.8); 
+}
+
+
+/* ==========================
+   Estilos de la página Abonados
+   ========================== */
+
+* .abonados {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("../img/FormularioAbonados.jpeg")  center/cover;
+    height: 100vh;
+}   
+
+.abonados .fondo {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+.abonados #formulario {
+    background-color: rgba(255, 255, 255);
+    width: 350px; 
+    border-radius: 20px; 
+    flex-direction: column;
+    align-items: center;
+    box-shadow: #ccc;
+    border: 1px solid black;
+}
+
+.abonados .login-logo {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.abonados .login-logo img {
+    width: 150px;
+}
+
+.abonados .login-form {
+    text-align: center;
+}
+
+.abonados .login-form input {
+    width: 90%; 
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center; 
+}
+
+
+.abonados input[type="button"]  {
+    background-color: #800000; 
+    color:white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    width: 90%;
+}
+
+.abonados input:hover[type="button"]  {
+    background-color: #b23737; 
+    
+}

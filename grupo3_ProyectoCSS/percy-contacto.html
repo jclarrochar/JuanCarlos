@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Contacto</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <style>
+
+        /*Estilos exclusivamente desarrollados por Juan Carlos Larrocha*/
+
+/* ==========================
+   Estilos generales
+   ========================== */
+
+/*BODY*/   
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("./img/FormularioAbonados.jpeg")  center/cover;
+
+}
+
+
+/*NAV*/
+
+#div1 {
+    background-color: rgb(68, 23, 23);
+    padding: 10px 20px;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+#div1 > a img {
+    width: 15%;
+    
+}
+
+#div1 > a img:hover {
+    width: 20%;
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#menu li {
+    position: relative;
+}
+
+#menu li > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+#menu > li:hover > a {
+    background-color: rgb(101, 101, 101);
+}
+
+#menu li ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(64, 64, 64);
+    list-style: none;
+    padding: 0;
+}
+
+#menu li ul li a {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+#menu li ul li a:hover {
+    background-color: white;
+    color: rgb(64, 64, 64);
+}
+
+#menu > li:hover ul {
+    display: block;
+}
+
+/*FOOTER*/
+
+#footer {
+    background-color: rgb(68, 23, 23);  
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px; 
+    position: absolute; 
+    bottom: 0;
+    width: 100%; 
+    
+}
+
+#footer p {
+    margin: 0;
+}
+
+/*Copia y pega de estilos generales Juan carlos para que el fondo del body, nav y footer de las páginas de percy sean algo más homogéneas a las mías.
+No enlazo con mi hoja de estílos para que se pueda diferenciar más fácilmente la parte de percy y la de Juan Carlos*/  
+
+
+
+
+        /*
+        .nav {
+            float: left;
+            background-color: rgb(68, 23, 23);
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: 100%;
+            color: azure;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        */
+        
+       
+
+        .lin:hover {
+            color: whitesmoke;
+            background-color: gray;
+        }
+        /* 
+        .footer {
+            background-color: rgb(66, 66, 66);
+            color: azure;
+            text-align: right;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 4px;
+            padding-right: 20px;
+            position:fixed;
+            
+            bottom:0;
+        }
+        */
+      
+      
+
+       
+
+        i:hover {
+            color: red;
+        }
+
+        .parrafo {
+            color:white; 
+            margin-top:200px; 
+            margin-left:350px;
+            width:fit-content;
+            height: fit-content;
+            display: inline-block;
+            
+            
+        }
+
+        .foto {
+            width:fit-content;
+            float:right;
+            margin-right:300px;
+            margin-top:100px;
+            border-radius: 26px;
+            overflow: hidden;
+        }
+
+        .foto img {
+            width: 400px;
+            height: 400px;
+            
+        }
+
+    
+    </style>
+    <!--Este nav dentro del head es de percy, y todo lo que lleve su nombre menos lo que indique explícitamente que es de Juan Carlos
+    <div class="nav">
+        <nav>
+            <ul id="uli">
+                <li class="lin">Index </li>
+
+                <li class="lin">El teatro </li>
+
+                <li class="lin">Programación </li>
+
+                <li class="lin">Entradas</li>
+
+                <li class="lin">Abono </li>
+
+                <li class="lin">Contacto </li>
+
+            </ul>
+        </nav>
+    </div>
+    -->
+</head>
+<body>
+    <header> 
+        <div id="div1"> <!--NAV ELABORADO POR JUAN CARLOS LARROCHA-->
+            <a href="juancarlos-index.html">
+                <img src="./img/LogoTeatroPercy.png" alt="logo del teatro">
+            </a>
+            <nav>
+                <ul id="menu">
+                    <li><a href="percy-elteatro.html">El Teatro</a>
+                        <ul>
+                            <li><a href="percy-elteatro.html">Historia</a></li>
+                            <li><a href="percy-elteatro.html">Espacios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="juancarlos-programacion.html">Programación</a></li>
+                    <li><a href="percy-entradas.html">Entradas</a></li>
+                    <li><a href="juancarlos-abonados.html">Abono</a></li>
+                    <li><a href="percy-contacto.html">Contacto</a></li>
+                </ul>
+            </nav> 
+        </div> <!--Hasta aquí-->
+    </header>
+
+    <section>
+        <div class="parrafo">
+            <h1>Ponte en contacto con nosotros</h1>
+            <ul>
+                <i class="fa fa-envelope" style="font-size:36px;"></i>
+                <li>Email</li>
+                <i class="fab fa-instagram" style="font-size:36px;"></i>
+                <li>Instagram</li>
+                <i class="fab fa-twitter" style="font-size:36px;"></i>
+                <li>Twitter</li>
+                <i class="fa fa-phone" style="font-size:36px;"></i>
+                <li>Teléfono</li>
+            </ul>
+            
+        </div>
+
+        <div class="foto">
+            <img src="img/bi.jpg" ></img>
+        </div>
+
+
+    </section>
+
+        <footer> <!--Footer hecho por Juan Carlos Larrocha-->
+            <div id="footer">
+                <p>1º ASIR | Página elaborada por Percival</p>
+            </div>
+        </footer>
+    
+</body>
+<!-- Este footer fuera del body es de Percy al igual que su código y sus estilos 
+ <div class="footer">
+    ASIR 1 &copy;
+</div> -->
+</html>

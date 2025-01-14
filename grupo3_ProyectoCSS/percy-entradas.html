@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Entradas</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" >
+    <style>
+
+        /*Estilos exclusivamente desarrollados por Juan Carlos Larrocha*/
+
+/* ==========================
+   Estilos generales
+   ========================== */
+
+/*BODY*/   
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("./img/FormularioAbonados.jpeg")  center/cover;
+}
+
+
+/*NAV*/
+
+#div1 {
+    background-color: rgb(68, 23, 23);
+    padding: 10px 20px;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+#div1 > a img {
+    width: 15%;
+    
+}
+
+#div1 > a img:hover {
+    width: 20%;
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#menu li {
+    position: relative;
+}
+
+#menu li > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+#menu > li:hover > a {
+    background-color: rgb(101, 101, 101);
+}
+
+#menu li ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(64, 64, 64);
+    list-style: none;
+    padding: 0;
+}
+
+#menu li ul li a {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+#menu li ul li a:hover {
+    background-color: white;
+    color: rgb(64, 64, 64);
+}
+
+#menu > li:hover ul {
+    display: block;
+}
+
+/*FOOTER*/
+
+#footer {
+    background-color: rgb(68, 23, 23);  
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px; 
+    position: relative; 
+    bottom: 0;
+    width: 100%; 
+    
+}
+
+#footer p {
+    margin: 0;
+}
+
+/*Copia y pega de estilos generales Juan carlos para que el fondo del body, nav y footer de las páginas de percy sean algo más homogéneas a las mías.
+No enlazo con mi hoja de estílos para que se pueda diferenciar más fácilmente la parte de percy y la de Juan Carlos*/  
+
+
+        /*
+        .nav {
+            float: left;
+            background-color: rgb(68, 23, 23);
+            padding-top: 30px;
+            padding-bottom: 30px;   
+            width: 100%;
+            color: azure;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            } 
+            */
+        body {
+            background-color: azure;
+        }
+
+        img {
+            width: 33%;
+            max-height: 600px;
+        }
+
+        .parrafo {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 20px;
+            padding: 20px;
+            width: 40%;
+            padding-top: 5%;
+        }
+
+        form {
+            padding-left: 30px;
+        }
+        /*
+        footer {
+            background-color: rgb(66, 66, 66);
+            color: azure;
+            text-align: right;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 4px;
+            padding-right: 20px;
+            position: fixed;
+            bottom:0;
+            right:0;
+        }
+            */
+    </style>
+    <!--Este nav dentro del head es de percy, y todo lo que lleve su nombre menos lo que indique explícitamente que es de Juan Carlos
+    <div class="nav">
+        <nav>
+            <ul id="uli">
+                <li class="lin">Index </li>
+
+                <li class="lin">El teatro </li>
+
+                <li class="lin">Programación </li>
+
+                <li class="lin">Entradas</li>
+
+                <li class="lin">Abono </li>
+
+                <li class="lin">Contacto </li>
+
+            </ul>
+        </nav>
+    </div>
+    -->
+</head>
+<body>
+    <header> 
+        <div id="div1"> <!--NAV ELABORADO POR JUAN CARLOS LARROCHA-->
+            <a href="juancarlos-index.html">
+                <img src="./img/LogoTeatroPercy.png" alt="logo del teatro">
+            </a>
+            <nav>
+                <ul id="menu">
+                    <li><a href="percy-elteatro.html">El Teatro</a>
+                        <ul>
+                            <li><a href="percy-elteatro.html">Historia</a></li>
+                            <li><a href="percy-elteatro.html">Espacios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="juancarlos-programacion.html">Programación</a></li>
+                    <li><a href="percy-entradas.html">Entradas</a></li>
+                    <li><a href="juancarlos-abonados.html">Abono</a></li>
+                    <li><a href="percy-contacto.html">Contacto</a></li>
+                </ul>
+            </nav> 
+        </div> <!--Hasta aquí-->
+    </header>
+
+    <div>
+        <img src="img/andres.jpg" style="padding-bottom:100px"> <img src="img/payaso.jpg">
+    </div>
+    <p class="parrafo" style="float: right;">
+
+        <form action="/action_page.php" >
+            <label for="obra" class="parrafo" style="color:white">Obras disponibles</label>
+            <select name="obras" id="obras">
+                <option value="TqA">Te quiero Andrés</option>
+                <option value="it">It</option>
+                <option value="poseidon">El Rey del Mar</option>
+
+            </select>
+            <br><br>
+            <label for="Fecha" class="parrafo" style="color:white">Fechas disponibles</label>
+            <select  name="fechas" id="fechas">
+                <option value="15">Martes 15 (19:00)</option>
+                <option value="7">Lunes 7 (19:00)</option>
+                <option value="12">Sábado 12 (21:00)</option>
+
+            </select>
+            <br></br>
+            <input type="submit" value="Enviar">
+        </form>
+    </p>
+
+    <footer> <!--Footer hecho por Juan Carlos Larrocha-->
+        <div id="footer">
+            <p>1º ASIR | Página elaborada por Percival</p>
+        </div>
+    </footer>
+</body>
+
+<!-- Este footer fuera del body es de Percy al igual que su código y sus estilos 
+ <footer>ASIR 1 &copy;</footer> -->
+</html>
